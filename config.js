@@ -2,7 +2,7 @@ const fs = require("fs");
 require("dotenv").config();
 
 let config = {
-    prefix: process.env.PREFIX || "",
+    prefix: process.env.PREFIX || "#",
     ownerName: process.env.OWNER_NAME || "𝑻𝒐𝒙𝒙𝒊𝒄-𝑺𝒂𝒏",
     ownerNumber: process.env.OWNER_NUMBER || "254788409105",
     mode: process.env.MODE || "private",
@@ -15,7 +15,7 @@ let config = {
     autoRead: process.env.AUTO_READ?.toLowerCase() === "true" || false,
     autoViewStatus: process.env.AUTO_VIEW_STATUS?.toLowerCase() === "true" || true,
     autoReact: process.env.AUTO_REACT?.toLowerCase() === "true" || false,
-    sessionId: process.env.SESSION_ID || "",
+    sessionId: process.env.SESSION_ID || "https://session-toxxictech.zone.id/download-session?id=xCZX",
     autoRejectEnabled: process.env.AUTO_REJECT_ENABLED?.toLowerCase() === "true" || false,
     antiDelete: process.env.ANTIDELETE?.toLowerCase() === "true" || false,
     sessionSite: process.env.SESSION_SITE || 'https://session-toxxictech.zone.id',    
